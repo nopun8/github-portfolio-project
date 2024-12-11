@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Layout</title>
+    <style>/* styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F2FFE3;
+            min-height: 100vh;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px 5%;
+            background-color: white;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .figma-icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .header-right a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .get-started {
+            background-color: black;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        
+        .intro h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .intro p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #666;
+        }
+        
+        .page-number {
+            margin-top: 20px !important;
+            font-size: 14px !important;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .feature {
+            flex: 1;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-image {
+            width: 100%;
+            height: 195px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .feature h2 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .feature p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .feature a {
+            font-size: 0.9rem;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .arrows {
+            display: flex;
+            justify-content: space-between;
+            width: 50px;
+            font-size: 1.5rem;
+            height: fit-content;
+            margin: 0;
+            margin-top: auto;
+            cursor: pointer;
+        }
+        .arrows .arrow{
+            font-size: 20px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .arrows .arrow:nth-child(2){
+            background: rgba(0, 0, 0, 0.1);
+        }
+        section.feature a{
+            color: #666;
+            text-decoration: none;
+            border-bottom: 0.1rem solid #666;
+            padding-bottom: 1px;
+        }
+
+        .header-right a.black{
+            color: #333;
+        }
+
+        .header-right a.login{
+            border: 1px solid #000;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .main-text .normal{
+            font-size: 32px !important;
+            color: #333;
+        }
+        .main-text .bold{
+            font-size: 32px !important;
+            color: #000 !important;
+        }
+        .intro{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            margin: 40px 0 20px 0;
+            padding: 0 5%;
+        }
+        .intro .intro-text{
+            max-width: 600px;
+        }
+        footer{
+            width: 100%;
+            height: 20px;
+            background-color: #E5FE98;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="none" viewBox="0 0 33 49" aria-label="Homepage" class="css-v5hztt"><path fill="#00B6FF" d="M16.5 23.612a7.28 7.28 0 0 1 7.28-7.279h1.053a8.167 8.167 0 1 1 0 16.333H23.78a7.28 7.28 0 0 1-7.279-7.279z"></path><path fill="#24CB71" d="M0 40.834a8.167 8.167 0 0 1 8.167-8.167H16.5v8.083c0 4.557-3.735 8.25-8.292 8.25C3.698 49 0 45.344 0 40.834"></path><path fill="#FF7237" d="M16.5 0v16.333h8.333a8.167 8.167 0 1 0 0-16.333z"></path><path fill="#FF3737" d="M0 8.166a8.167 8.167 0 0 0 8.167 8.167H16.5V0H8.167A8.167 8.167 0 0 0 0 8.166"></path><path fill="#874FFF" d="M0 24.5a8.167 8.167 0 0 0 8.167 8.167H16.5V16.334H8.167A8.167 8.167 0 0 0 0 24.5"></path></svg>
+            <nav>
+                <a href="#">Products</a>
+                <a href="#">Solutions</a>
+                <a href="#">Community</a>
+                <a href="#">Resources</a>
+                <a href="#">Pricing</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#" class="contact-sales black">Contact sales</a>
+            <a href="#" class="login black">Log in</a>
+            <a href="#" class="get-started">Get started for free</a>
+        </div>
+    </header>
+    
+    <section class="intro">
+        <div class="intro-text">
+            <p class="main-text">
+                <span class="bold">Bring design and dev together.</span>
+                <span class="normal">Easily translate designs into code with a workflow built for developers.</span>
+            </p>
+            <p class="page-number">1/4</p>
+        </div>
+        <div class="arrows">
+            <span class="arrow">←</span>
+            <span class="arrow">→</span>
+        </div>
+    </section>
+    
+    <main class="content">
+        <section class="feature">
+            <img src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/6830c09cac9509c9bc8fe95be5b32550dd963b47/d378a399c92f42c5bde954a6fa6e1b5b0dd336f7" alt="Design systems that scale" class="feature-image">
+            <p>
+                <b>Design systems that scale.</b>
+                Streamline the product development process with a design system that's aligned across design and code.</p>
+            <a href="#">Learn about design systems</a>
+        </section>
+        <section class="feature">
+            <img src="https://help.figma.com/hc/article_attachments/15463250897815" alt="Keep design and code connected" class="feature-image">
+            <p>
+                <b>Keep design and code connected.</b>
+                Bring your component code into Dev Mode so developers get the right code, every time.</p>
+            <a href="#">Learn about Dev Mode</a>
+        </section>
+        <section class="feature">
+            <img src="https://europe1.discourse-cdn.com/figma/original/3X/0/5/05c18ee3a895f6193c0cc4b8404b0d70be42d66c.png" alt="Focus on the details in Focus View" class="feature-image">
+            <p>
+                <b>Focus on the details in Focus View.</b>
+                Select and inspect a specific design in Dev Mode, then dig into the details in Focus View so you know exactly what to build.</p>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
